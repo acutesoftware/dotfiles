@@ -1,0 +1,6 @@
+[user]
+	name = acutesoftware
+	email = djmurray@acutesoftware.com.au
+[core]
+	autocrlf = true
+	eol = lf
