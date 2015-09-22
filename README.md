@@ -24,5 +24,20 @@ run install.sh again to deploy managed scripts back to home
 |g | aliased commands for git|
 |install.sh		  | backs up existing files, then deploys from dotfiles folder|
 
-# https://github.com/acutesoftware/dotfiles.git
+#### install.sh
+Deploys the scripts and dotfiles from the master folder ( ~/dev/dotfiles ) to home
 
+
+#### p (project switcher)
+simple script to allow jumping around projects and performing standard commands
+
+Usage: 
+
+~. ~/p (cmd) (project abbrev)~
+
+```
+  . ~/p g AI  = git status of AIKIF           
+  . ~/p t wo  = run tests in worldbuild       
+  . ~/p j vi  = cd to virtual_AI_simulator    
+  . ~/p j dot = cd to ~/dev/dotfiles (master) 
+```
