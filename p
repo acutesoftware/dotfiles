@@ -9,11 +9,6 @@ py_projects="python/AIKIF python/ext-dl python/filelist python/gfx python/lifepi
 web_projects=" html/web2015"
 dot_projects=" /../../../dotfiles"
 projects=$py_projects$web_projects$dot_projects
-echo "------------- Project Switcher----------"
-echo "|   . ~/p g AI  = AIKIF                |"
-echo "|   . ~/p g wo  = worldbuild           |"
-echo "|   . ~/p g vi  = virtual_AI_simulator |"
-echo "----------------------------------------"
 
 cmd=$1
 prj=$2
@@ -24,9 +19,32 @@ do
 	if [[ $proj == *$prj* ]]
 	then
 		newfolder="/home/duncan/dev/src/"$proj;
-		echo "$newfolder";
-		cd $newfolder;
-	    ls -lart
+		case ${cmd} in 
+		"j")
+			echo "Changing to $newfolder";
+			cd $newfolder;
+			ls -lart
+			;;
+		"g")
+			echo "Git status of $newfolder"
+			cd $newfolder;
+			git status
+			;;
+		"t")
+			echo "Testing $newfolder"
+			cd $newfolder;
+			cd "tests";
+			pwd;
+			python run_tests.py;
+			;;
+	    *)
+			echo "---------------- Project Switcher--------------"
+			echo "|   . ~/p g AI  = git status of AIKIF         |"
+			echo "|   . ~/p t wo  = run tests in worldbuild     |"
+			echo "|   . ~/p j vi  = cd to virtual_AI_simulator  |"
+			echo "-----------------------------------------------"
+			;;
+	    esac
 	    break
 	fi
 done;
