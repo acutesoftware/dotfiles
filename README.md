@@ -33,7 +33,9 @@ simple script to allow jumping around projects and performing standard commands
 
 Usage: 
 
-~. ~/p (cmd) (project abbrev)~
+. ~/p (cmd) (project abbrev)
+
+Note the leading .  Examples below are
 
 ```
   . ~/p g AI  = git status of AIKIF           
@@ -41,3 +43,16 @@ Usage:
   . ~/p j vi  = cd to virtual_AI_simulator    
   . ~/p j dot = cd to ~/dev/dotfiles (master) 
 ```
+
+Current list of projects. Note you only need a couple of unique characters from the project name, and it will find the first match
+
+AIKIF
+ext-dl
+filelist
+gfx
+lifepim
+LifePIM_public
+rawdata 
+tax
+virtual_AI_simulator 
+worldbuild
