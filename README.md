@@ -46,13 +46,15 @@ Note the leading .  Examples below are
 
 Current list of projects. Note you only need a couple of unique characters from the project name, and it will find the first match
 
-AIKIF
-ext-dl
-filelist
-gfx
-lifepim
-LifePIM_public
-rawdata 
-tax
-virtual_AI_simulator 
-worldbuild
+```
+	AIKIF
+	ext-dl
+	filelist
+	gfx
+	lifepim
+	LifePIM_public
+	rawdata 
+	tax
+	virtual_AI_simulator 
+	worldbuild
+```
