@@ -5,13 +5,29 @@
 # up new git projects
 ########################################################
 
-projects="python/AIKIF python/ext-dl python/filelist python/gfx python/lifepim python/LifePIM_public python/rawdata python/tax python/virtual_AI_simulator python/worldbuild"
-echo "TODO = use command param to switch to folder based on first letters. You are in folder "
-pwd
+py_projects="python/AIKIF python/ext-dl python/filelist python/gfx python/lifepim python/LifePIM_public python/rawdata python/tax python/virtual_AI_simulator python/worldbuild"
+web_projects=" html/web2015"
+dot_projects=" /../../../dotfiles"
+projects=$py_projects$web_projects$dot_projects
+echo "------------- Project Switcher----------"
+echo "|   . ~/p g AI  = AIKIF                |"
+echo "|   . ~/p g wo  = worldbuild           |"
+echo "|   . ~/p g vi  = virtual_AI_simulator |"
+echo "----------------------------------------"
 
+cmd=$1
+prj=$2
+newfolder=""
 for proj in $projects;
 do
-	echo "Project : $proj"
-	
-	# todo 
+	#echo "cmd = $cmd, prj = $prj, proj = $proj";
+	if [[ $proj == *$prj* ]]
+	then
+		newfolder="/home/duncan/dev/src/"$proj;
+		echo "$newfolder";
+		cd $newfolder;
+	    ls -lart
+	    break
+	fi
 done;
+
