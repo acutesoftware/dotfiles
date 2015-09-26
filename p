@@ -54,6 +54,8 @@ do
             echo "|   . ~/p t wo  = run tests in worldbuild       |"
             echo "|   . ~/p j vi  = cd to virtual_AI_simulator    |"
             echo "|   . ~/p j dot = cd to ~/dev/dotfiles (master) |"
+            echo "|   . ~/p von   = activate virtualenv for cwd   |"
+            echo "|   . ~/p voff  = deactivate virtualenv in cwd  |"
             echo "-------------------------------------------------"
             ;;
         esac
