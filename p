@@ -39,8 +39,8 @@ do
             ;;
         "von")
             echo "Virtual Environment ON "
-            virtualenv -p /usr/bin/python3 venv
-            source venv/bin/activate
+            virtualenv -p /usr/bin/python3 venv2
+            source venv2/bin/activate
             #pip install Pillow
             ;;
         "voff")
