@@ -40,6 +40,7 @@ do
         "g")
             echo "Git status of $newfolder"
             cd $newfolder;
+            git config --global credential.helper 'cache --timeout=3600'
             git status
             ;;
         "t")
