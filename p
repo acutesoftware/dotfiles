@@ -5,9 +5,20 @@
 # up new git projects
 ########################################################
 
-py_projects="python/AIKIF python/ext-dl python/filelist python/gfx python/lifepim python/LifePIM_public python/rawdata python/tax python/virtual-AI-simulator python/worldbuild"
-web_projects=" html/web2015"
-dot_projects=" ../dotfiles"
+py_projects="python/AIKIF "
+py_projects+="python/ext-dl "
+py_projects+="python/filelist "
+py_projects+="python/gfx "
+py_projects+="python/lifepim "
+py_projects+="python/LifePIM_public "
+py_projects+="python/rawdata "
+py_projects+="python/tax "
+py_projects+="python/virtual-AI-simulator "
+py_projects+="python/worldbuild "
+py_projects+="python/kaggle/aicomp "
+web_projects="html/web2015 "
+dot_projects="../dotfiles "
+
 projects=$py_projects$web_projects$dot_projects
 
 cmd=$1
@@ -15,10 +26,11 @@ prj=$2
 newfolder=""
 for proj in $projects;
 do
-    #echo "cmd = $cmd, prj = $prj, proj = $proj";
+    echo "cmd = $cmd, prj = $prj, proj = $proj";
     if [[ $proj == *$prj* ]]
     then
         newfolder="/home/duncan/dev/src/"$proj;
+        echo $newfolder
         case ${cmd} in 
         "j")
             echo "Changing to $newfolder";
