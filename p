@@ -37,6 +37,11 @@ do
             cd $newfolder;
             ls -lart
             ;;
+        "f")
+            echo "search for " $3
+            cd $newfolder;
+            grep --include=\*.py -rnw './' -e $3
+            ;;
         "g")
             echo "Git status of $newfolder"
             cd $newfolder;
@@ -65,6 +70,7 @@ do
             echo "---------------- Project Switcher----------------"
             echo "|   . ~/p g AI  = git status of AIKIF           |"
             echo "|   . ~/p t wo  = run tests in worldbuild       |"
+            echo "|   . ~/p f AI text = find 'text' in AIKIF proj |"
             echo "|   . ~/p j vi  = cd to virtual_AI_simulator    |"
             echo "|   . ~/p j dot = cd to ~/dev/dotfiles (master) |"
             echo "|   . ~/p von   = activate virtualenv for cwd   |"
