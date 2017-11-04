@@ -12,11 +12,29 @@ note the PC name
 check internet connectivity
 
 
-install Chrome
+install Chrome - google.com
+
+install vim
+
+    sudo apt install vim
+
 
 
 #### run updates
 sudo apt-get upgrade
+
+
+
+
+#### Install from Ubuntu Software panel
+- FileZilla
+- Midnight Commander
+- Gimp
+- Blender
+- gedit
+- VLC media player
+
+
 
 
 ## Development tools
@@ -53,6 +71,14 @@ Setup Python virtual environment
 
 #### install java (runtime)
 sudo apt-get install default-jre
+
+
+#### Database
+
+setup postgress via
+
+    sudo apt-get install postgresql
+    
 
 
 ## Games
