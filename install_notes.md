@@ -84,7 +84,14 @@ setup postgress via
     sudo apt-get install postgresql
     sudo su - postgres
     psql
-    
+ 
+ 
+#### Atom Text Editor
+ 
+    sudo add-apt-repository ppa:webupd8team/atom
+    sudo apt update; sudo apt install atom 
+    atom
+ 
 
 #### Misc
 
