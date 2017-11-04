@@ -31,7 +31,7 @@ sudo apt-get upgrade
 - Midnight Commander
 - Gimp
 - Blender
-- gedit
+- Geany (text editor)
 - VLC media player
 
 
