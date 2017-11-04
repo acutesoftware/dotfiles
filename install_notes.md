@@ -21,7 +21,8 @@ install vim
 
 
 #### run updates
-sudo apt-get upgrade
+
+    sudo apt-get upgrade
 
 
 
@@ -41,6 +42,7 @@ sudo apt-get upgrade
 
 #### Git
 install git via 
+
     sudo apt-get install git-core
     
 When working with windows files as well, make sure LF and CRs are ok
@@ -57,6 +59,7 @@ should already be installed 2.7 and 3.5
 To install pip use
 
     sudo apt-get install python-pip
+    pip install --upgrade pip
 
 
 Setup Python virtual environment
@@ -70,7 +73,8 @@ Setup Python virtual environment
     
 
 #### install java (runtime)
-sudo apt-get install default-jre
+
+    sudo apt-get install default-jre
 
 
 #### Database
@@ -78,7 +82,16 @@ sudo apt-get install default-jre
 setup postgress via
 
     sudo apt-get install postgresql
+    sudo su - postgres
+    psql
     
+
+#### Misc
+
+    sudo apt-get install nmap 
+    sudo apt-get install zenmap
+    sudo apt install wireshark-qt
+    sudo apt-get install synaptic
 
 
 ## Games
