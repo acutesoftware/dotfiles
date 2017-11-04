@@ -4,8 +4,11 @@ dotfiles and scripts for new linux install
 ## Quickstart
 #### Step 1 - Run install.sh for first time
 makes a backup folder /dev/dotfiles_old
+
 copies managed dotfiles to backup folder
+
 installs standard packages I use
+
 
 #### Step 2 - modify scripts and dotfiles
 Always modify files in /dev/dotfiles NOT in home
