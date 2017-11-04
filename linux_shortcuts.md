@@ -7,9 +7,10 @@ This is a list of schortcuts I use
 ### Utilities
 mc = Midnight Commander file manager
 filezilla = FTP software
-
+sudo synaptic = package manager
 remmina = Remote Desktop (to Windows PCs)
-
+sudo zenmap = port scanning security tool
+wireshark = network analusis tool
 
 vlc = Media player / recorder
 
