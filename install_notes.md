@@ -1,10 +1,18 @@
 
-# boot with Linux CD and install 
+# Notes for setting up Linux
+
+#### boot with Linux CD and install 
+
+note the PC name
+
+check internet connectivity
 
 
+install Chrome
 
-# run updates
+
+#### run updates
 sudo apt-get upgrade
 
-# install java
+#### install java
 sudo apt-get install default-jre
