@@ -70,6 +70,13 @@ Setup Python virtual environment
     virtualenv venv
     source venv/bin/activate
     
+
+Jupyter Notebook
+
+    python3 -m pip install --upgrade pip
+    sudo python3 -m pip install jupyter
+
+    jupyter notebook
     
 
 #### install java (runtime)
