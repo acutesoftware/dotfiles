@@ -57,6 +57,7 @@ Current list of projects. Note you only need a couple of unique characters from 
 	lifepim
 	LifePIM_public
 	rawdata 
+	netDiary
 	tax
 	virtual_AI_simulator 
 	worldbuild
