@@ -98,6 +98,8 @@ Setup mysql
     sudo apt-get install mysql-server
     sudo apt-get install mysql-client
     sudo apt-get install mysql-workbench
+    sudo apt-get install python-mysqldb
+    sudo pip3 install pymysql
  
  
 #### Atom Text Editor
