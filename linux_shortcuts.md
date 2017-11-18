@@ -33,4 +33,6 @@ This is a list of schortcuts I use
     vim = text editor
     gedit = text editor
     psql = Postgress database
+    sudo service mysql status = check status of mysql server
+    
 
