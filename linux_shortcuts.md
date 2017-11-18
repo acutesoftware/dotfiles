@@ -33,6 +33,8 @@ This is a list of schortcuts I use
     vim = text editor
     gedit = text editor
     psql = Postgress database
-    sudo service mysql status = check status of mysql server
+    mysql -u root -p  (launch the mysql command line)
+    /usr/bin/mysql-workbench (launch the mysql workbench GUI)
+    sudo service mysql status  (check status of mysql server)
     
 
