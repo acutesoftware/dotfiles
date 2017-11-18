@@ -91,6 +91,13 @@ setup postgress via
     sudo apt-get install postgresql
     sudo su - postgres
     psql
+    
+    
+Setup mysql
+
+    sudo apt-get install mysql-server
+    sudo apt-get install mysql-client
+    sudo apt-get install mysql-workbench
  
  
 #### Atom Text Editor
