@@ -108,6 +108,14 @@ Setup mysql
     sudo apt update; sudo apt install atom 
     atom
  
+ 
+ #### Node.js
+ 
+     sudo apt-get install nodejs
+     sudo apt-get install npm
+     sudo apt-get install build-essential
+     npm ls    # list packages - currently empty
+ 
 
 #### Misc
 
