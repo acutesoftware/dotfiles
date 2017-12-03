@@ -32,3 +32,10 @@ Get list and PID of specific processes (eg python)
 
     pgrep -a python
     
+
+### Data extraction
+
+Get a list of URLs from a html file (like an exported list of Chrome bookmarks)
+
+    grep -Eoi '<a [^>]+>' source.html | grep -Eo 'HREF="[^\"]+"' | grep -Eo '(http|https)://[^/"]+' > urls.csv
+
