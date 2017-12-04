@@ -34,7 +34,7 @@ This is a list of schortcuts I use
     gedit = text editor
     psql = Postgress database
     mysql -u root -p  (launch the mysql command line)
-    /usr/bin/mysql-workbench (launch the mysql workbench GUI)
+    . ~/swb.sh  (calls /usr/bin/mysql-workbench)
     sudo service mysql status  (check status of mysql server)
     
 
