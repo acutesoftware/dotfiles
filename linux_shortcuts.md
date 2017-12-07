@@ -31,6 +31,7 @@ This is a list of schortcuts I use
     python3 = python3
     git = version control
     vim = text editor
+    atom = text editor (install symbols package and use <CTRL> <R> to jump to function)
     gedit = text editor
     psql = Postgress database
     mysql -u root -p  (launch the mysql command line)
