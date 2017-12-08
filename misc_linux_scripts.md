@@ -33,6 +33,14 @@ Get list and PID of specific processes (eg python)
     pgrep -a python
     
 
+### Network
+
+Get IP Address and network details
+
+    /sbin/ifconfig
+
+
+
 ### Data extraction
 
 Get a list of URLs from a html file (like an exported list of Chrome bookmarks)
