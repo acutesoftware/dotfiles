@@ -1,13 +1,22 @@
 
-### Disk 
+### Disk and Hardware
 
+Hardware Summary
+
+    sudo lshw -short
+    
 Get the total disk space left and summary of folder usage
 
     df -h .; du -sh -- * | sort -hr
+    
+Simple partition summary
+
+    lsblk
 
 Count files in folder and sub folders
 
     find . -type f | wc -l
+
 
 
 ### Processes
