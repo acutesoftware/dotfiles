@@ -115,6 +115,9 @@ Setup mysql
      sudo apt-get install npm
      sudo apt-get install build-essential
      npm ls    # list packages - currently empty
+     
+     sudo apt install node-less  # install lessc
+     lessc build/build_standalone.less datepicker.css
  
 
 #### Misc
