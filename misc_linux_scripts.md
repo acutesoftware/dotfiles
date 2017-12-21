@@ -41,6 +41,11 @@ Get list and PID of specific processes (eg python)
 
     pgrep -a python
     
+Show all processes and usage
+
+    top
+    htop   (will need to run sudo apt install htop first)
+    
 
 ### Network
 
