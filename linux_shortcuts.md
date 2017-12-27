@@ -13,6 +13,7 @@ This is a list of schortcuts I use
     wireshark = network analusis tool
 
     vlc = Media player / recorder
+    rhythmbox = MP3 player / podcasts / Internet radio
 
 
 ### Misc
