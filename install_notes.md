@@ -78,6 +78,21 @@ Jupyter Notebook
 
     jupyter notebook
     
+    
+OpenCV for Python3
+    
+    sudo pip3 install opencv-python
+    
+        Collecting opencv-python
+        Downloading opencv_python-3.4.0.12-cp35-cp35m-manylinux1_x86_64.whl (24.9MB)
+          100% |████████████████████████████████| 24.9MB 75kB/s 
+        Collecting numpy>=1.11.1 (from opencv-python)
+        Downloading numpy-1.13.3-cp35-cp35m-manylinux1_x86_64.whl (16.9MB)
+          100% |████████████████████████████████| 16.9MB 115kB/s 
+        Installing collected packages: numpy, opencv-python
+        Successfully installed numpy-1.13.3 opencv-python-3.4.0.12
+    
+    
 
 #### install java (runtime)
 
