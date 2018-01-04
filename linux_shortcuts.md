@@ -11,7 +11,7 @@ This is a list of schortcuts I use
     remmina = Remote Desktop (to Windows PCs)
     sudo zenmap = port scanning security tool
     wireshark = network analusis tool
-
+    gnome-calculator = calculator
     vlc = Media player / recorder
     rhythmbox = MP3 player / podcasts / Internet radio
 
