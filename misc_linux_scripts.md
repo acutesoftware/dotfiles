@@ -17,7 +17,8 @@ Simple partition summary
 What version of Linux are you running
 
     uname -a
-    > Linux TREEBEARD 4.4.0-98-generic #121-Ubuntu SMP Tue Oct 10 14:24:03 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+    > Linux TREEBEARD 4.4.0-98-generic #121-Ubuntu SMP Tue Oct 10 14:24:03 UTC 2017 
+      x86_64 x86_64 x86_64 GNU/Linux
     
     lsb_release -a
      > Distributor ID:	Ubuntu
@@ -25,6 +26,11 @@ What version of Linux are you running
      > Release:	        16.04
      > Codename:	    xenial
    
+How long has the PC been running
+     
+     uptime
+     >  23:09:26 up 61 days,  8:28,  1 user,  load average: 0.82, 0.48, 0.34
+
 
 Count files in folder and sub folders
 
