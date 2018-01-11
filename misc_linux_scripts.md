@@ -13,6 +13,19 @@ Simple partition summary
 
     lsblk
 
+
+What version of Linux are you running
+
+    uname -a
+    > Linux TREEBEARD 4.4.0-98-generic #121-Ubuntu SMP Tue Oct 10 14:24:03 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+    
+    lsb_release -a
+     > Distributor ID:	Ubuntu
+     > Description:	    Ubuntu 16.04.3 LTS
+     > Release:	        16.04
+     > Codename:	    xenial
+   
+
 Count files in folder and sub folders
 
     find . -type f | wc -l
