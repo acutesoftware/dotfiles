@@ -79,4 +79,12 @@ Get IP Address and network details
 Get a list of URLs from a html file (like an exported list of Chrome bookmarks)
 
     grep -Eoi '<a [^>]+>' source.html | grep -Eo 'HREF="[^\"]+"' | grep -Eo '(http|https)://[^/"]+' > urls.csv
+    
+Grep log files
+
+    cat /var/log/www.lifepim.com.access.log  | grep "POST"          # number of posts to lifepim
+    cat /var/log/www.lifepim.com.access.log  | grep "login" | wc -l # number of login page accesses
+    awk '{ print $1 } ' /var/log/www.lifepim.com.access.log | uniq  # list of IP addresses
+    awk '{ print $7 } ' /var/log/www.lifepim.com.access.log | uniq  # list of pages accessed
+    
 
