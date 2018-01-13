@@ -84,7 +84,9 @@ Grep log files
 
     cat /var/log/www.lifepim.com.access.log  | grep "POST"          # number of posts to lifepim
     cat /var/log/www.lifepim.com.access.log  | grep "login" | wc -l # number of login page accesses
-    awk '{ print $1 } ' /var/log/www.lifepim.com.access.log | uniq  # list of IP addresses
-    awk '{ print $7 } ' /var/log/www.lifepim.com.access.log | uniq  # list of pages accessed
+    awk '{print $1}' /var/log/www.lifepim.com.access.log | sort | uniq -c   # count per IP address
+    awk '{print $7}' /var/log/www.lifepim.com.access.log | uniq  # list of pages accessed
+    
+    cat /var/log/www.lifepim.com.error.log | grep "Exception" | uniq      # list of exceptions
     
 
