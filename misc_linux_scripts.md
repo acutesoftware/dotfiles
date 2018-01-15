@@ -37,6 +37,20 @@ Count files in folder and sub folders
     find . -type f | wc -l
 
 
+### Files and Folders
+
+Get a tree view of subfolders 
+
+    ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+
+Find the most recently used files including all subdirectories
+
+    find . -type f -mtime -7 -print0 | xargs -0 ls -lt | head
+  
+Find string in all files (example searchs logs for Exception)
+
+    find /var/log/www.lifepim.com -type f -print0 2>/dev/null | xargs -0 grep --color=AUTO -Hn 'Except' 2>/dev/null
+
 
 ### Processes
 
