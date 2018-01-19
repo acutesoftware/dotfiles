@@ -103,4 +103,20 @@ Grep log files
     
     cat /var/log/www.lifepim.com.error.log | grep "Exception" | uniq      # list of exceptions
     
+### Date and Time
 
+Display Annual Calendar for current year
+   
+    cal -y 
+   
+   
+Show the current date in ISO format ( yyyy-mm-dd )
+  
+    echo $(date -I)
+    
+Store the current date / time as string in a bash variable
+
+    DATE=`date '+%Y-%m-%d %H:%M:%S'`
+    echo $DATE
+    
+    
