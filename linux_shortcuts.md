@@ -10,7 +10,7 @@ This is a list of schortcuts I use
     sudo synaptic = package manager
     remmina = Remote Desktop (to Windows PCs)
     sudo zenmap = port scanning security tool
-    wireshark = network analusis tool
+    wireshark = network analysis tool
     gnome-calculator = calculator
     vlc = Media player / recorder
     rhythmbox = MP3 player / podcasts / Internet radio
