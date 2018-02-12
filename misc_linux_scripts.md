@@ -86,6 +86,23 @@ Get IP Address and network details
 
     /sbin/ifconfig
 
+Lookup name of IP Address
+
+    nslookup 162.213.1.246
+    > Non-authoritative answer:
+    > 246.1.213.162.in-addr.arpa      name = wssa.beyondsecurity.com.
+    
+
+### Data Collection
+
+Download a file
+
+    wget http://www.acutesoftware.com.au/aikif/AIKIF-Overview.jpg
+    
+
+Download a site for offline reading
+
+    wget --recursive  --page-requisites http://www.acutesoftware.com.au/cont_articles.html
 
 
 ### Data extraction
