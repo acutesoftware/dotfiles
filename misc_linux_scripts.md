@@ -91,7 +91,13 @@ Lookup name of IP Address
     nslookup 162.213.1.246
     > Non-authoritative answer:
     > 246.1.213.162.in-addr.arpa      name = wssa.beyondsecurity.com.
-    
+  
+Get the IP address of a domain name
+
+     host www.acutesoftware.com.au
+    > acutesoftware.com.au has address 129.121.30.188
+  
+  
 
 ### Data Collection
 
