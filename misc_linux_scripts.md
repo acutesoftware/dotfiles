@@ -98,6 +98,18 @@ Get the IP address of a domain name
     > acutesoftware.com.au has address 129.121.30.188
   
   
+ Show the routing table
+
+    route 
+
+
+Port scanning
+
+    nmap
+
+ 
+  
+  
 
 ### Data Collection
 
