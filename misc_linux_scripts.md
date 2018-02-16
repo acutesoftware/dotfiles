@@ -108,7 +108,18 @@ Port scanning
     nmap
 
  
-  
+ ### Shell tips
+ 
+ Show top commands from your shell history 
+ 
+     history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+          35 cat
+          25 awk
+          18 pwd
+          15 ls
+          14 cd
+     
+     
   
 
 ### Data Collection
