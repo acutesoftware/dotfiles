@@ -23,6 +23,7 @@ This is a list of schortcuts I use
     blender = 3D graphics animation
     ./mcs1.sh = start minecraft server 1  (java -Xms1G -Xmx1G -jar minecraft_server.1.12.jar)
     ./mcs2.sh = start minecraft server 2
+    ./mcs5.sh = survival world
     ./mc.sh   = launch minecraft client  (java -jar /home/duncan/minecraft/Minecraft.jar)
     
 
