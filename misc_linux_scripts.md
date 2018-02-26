@@ -51,6 +51,16 @@ Find string in all files (example searchs logs for Exception)
 
     find /var/log/www.lifepim.com -type f -print0 2>/dev/null | xargs -0 grep --color=AUTO -Hn 'Except' 2>/dev/null
 
+Find a string 'blah' in all files with recursive (deep) search from current folder '.'
+
+    grep -Rnw '.' -e 'blah'
+
+Limit above search to only .html files
+
+    grep -Rn --include=*.html '.' -e 'blah'
+    
+    
+    
 
 ### Processes
 
