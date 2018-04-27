@@ -22,9 +22,14 @@ What version of Linux are you running
     
     lsb_release -a
      > Distributor ID:	Ubuntu
-     > Description:	    Ubuntu 16.04.3 LTS
+     > Description:	    Ubuntu 16.04.4 LTS
      > Release:	        16.04
      > Codename:	    xenial
+ 
+ What flavour of Ubuntu are you running (see https://itsfoss.com/which-ubuntu-install/ )
+ 
+     cat /var/log/installer/media-info
+     > Unity
    
 How long has the PC been running
      
