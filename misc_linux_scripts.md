@@ -185,4 +185,4 @@ Store the current date / time as string in a bash variable
 
 Show usage in log file grouped by date
 
-    select user_id, DATE_FORMAT(log_date, '%Y-%m'), count(*) from sys_log group by user_id, DATE_FORMAT(log_date, '%Y-%m') order by 2,1;
+    select DATE_FORMAT(log_date, '%Y-%m'), count(*) from sys_log group by DATE_FORMAT(log_date, '%Y-%m') order by 1;
