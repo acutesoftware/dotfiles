@@ -191,6 +191,10 @@ Show table size of selected tables in a schema
     FROM information_schema.TABLES where table_name like 'as_%' or table_name like 'sys_%' 
     GROUP BY table_name; 
 
+Get a list of column names for a table 
+
+    select * from information_schema.columns where table_name = 'as_task';
+
 Show usage in log file grouped by date
 
     select DATE_FORMAT(log_date, '%Y-%m'), count(*) from sys_log group by DATE_FORMAT(log_date, '%Y-%m') order by 1;
