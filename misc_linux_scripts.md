@@ -183,6 +183,14 @@ Store the current date / time as string in a bash variable
    
 ### SQL tips
 
+Show table size of selected tables in a schema
+
+    SELECT table_name as 'Database Name', 
+    sum( data_length + index_length ) as 'Size in Bytes', 
+    round((sum(data_length + index_length) / 1024 / 1024), 4) as 'Size in MB' 
+    FROM information_schema.TABLES where table_name like 'as_%' or table_name like 'sys_%' 
+    GROUP BY table_name; 
+
 Show usage in log file grouped by date
 
     select DATE_FORMAT(log_date, '%Y-%m'), count(*) from sys_log group by DATE_FORMAT(log_date, '%Y-%m') order by 1;
