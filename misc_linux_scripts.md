@@ -198,3 +198,7 @@ Get a list of column names for a table
 Show usage in log file grouped by date
 
     select DATE_FORMAT(log_date, '%Y-%m'), count(*) from sys_log group by DATE_FORMAT(log_date, '%Y-%m') order by 1;
+
+Show usage by user_id and date 
+
+    select log_date, user_id, count(*) from sys_log group by log_date, user_id order by log_date;
