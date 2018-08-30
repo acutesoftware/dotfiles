@@ -202,3 +202,10 @@ Show usage in log file grouped by date
 Show usage by user_id and date 
 
     select log_date, user_id, count(*) from sys_log group by log_date, user_id order by log_date;
+
+Show users by week
+
+    select WEEK(log_date), max(log_date) as date_until, count(*) as num_user_actions, 
+     count(distinct user_id) as active_users_this_week from sys_log 
+     where DATE_FORMAT(log_date, '%Y-%m') > '2018-05-05' group by WEEK(log_date);
+
