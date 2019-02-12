@@ -169,7 +169,25 @@ Grep log files
         1 "https://newsbout.com/id/19184625381"
         1 "https://umumble.com/links/156005/what-software-will-you-trust-when-you-get-senile%3F"
         1 "https://www.producthunt.com/ask/616-what-s-the-best-personal-knowledge-base"
-    
+
+Looping through list of gz files and grepping for blog hit count
+
+        for i in /var/log/www.lifepim.com.access*.gz
+        do
+            echo -n "Checking zipped logfile $i - "
+            zgrep '/blog/' "$i" | wc -l
+        done
+
+
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.2.gz - 45
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.3.gz - 112
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.4.gz - 92
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.5.gz - 62
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.6.gz - 64
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.7.gz - 85
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.8.gz - 213
+        Checking zipped logfile /var/log/www.lifepim.com.access.log.9.gz - 80
+
 ### Date and Time
 
 Display Annual Calendar for current year
