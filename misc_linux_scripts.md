@@ -164,6 +164,12 @@ Grep log files
     
     cat /var/log/www.lifepim.com.error.log | grep "Exception" | uniq      # list of exceptions
     
+    awk '{print $11}' /var/log/www.lifepim.com.access.log | sort | uniq -c | grep -v "lifepim"  # count by referrers
+    
+        1 "https://newsbout.com/id/19184625381"
+        1 "https://umumble.com/links/156005/what-software-will-you-trust-when-you-get-senile%3F"
+        1 "https://www.producthunt.com/ask/616-what-s-the-best-personal-knowledge-base"
+    
 ### Date and Time
 
 Display Annual Calendar for current year
