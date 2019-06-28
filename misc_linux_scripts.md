@@ -101,6 +101,14 @@ Get IP Address and network details
 
     /sbin/ifconfig
 
+See list of PC's on the network 
+
+    arp -n   
+    
+    ip -r neigh
+    
+    nmap -sA 192.168.1.0/24
+    
 Lookup name of IP Address
 
     nslookup 162.213.1.246
