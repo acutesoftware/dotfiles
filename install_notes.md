@@ -157,3 +157,8 @@ Setup mysql
 - click install to download the linux steam installer
 - run the installer
 - select linux games and download. Get a coffee
+
+### Keyboard Shortcuts
+Go to Settings > Devices > Keyboard, scroll to bottom and click '+' to add shortcut
+
+    Ctl + Alt + S = /bin/systemctl suspend
