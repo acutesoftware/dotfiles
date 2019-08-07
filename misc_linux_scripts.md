@@ -239,5 +239,5 @@ Show users by week
 
     select WEEK(log_date), max(log_date) as date_until, count(*) as num_user_actions, 
      count(distinct user_id) as active_users_this_week from sys_log 
-     where DATE_FORMAT(log_date, '%Y-%m') > '2018-05-05' group by WEEK(log_date);
+     where DATE_FORMAT(log_date, '%Y-%m') > '2018-05-05' group by WEEK(log_date) order by 2;
 
