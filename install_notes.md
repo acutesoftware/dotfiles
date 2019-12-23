@@ -92,7 +92,13 @@ OpenCV for Python3
         Installing collected packages: numpy, opencv-python
         Successfully installed numpy-1.13.3 opencv-python-3.4.0.12
     
+   
+tkinter
+
+    sudo apt-get install python3-tk
+    pip3 install tkcalendar
     
+   
 
 #### install java (runtime)
 
