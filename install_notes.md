@@ -117,6 +117,7 @@ setup postgress via
 Setup mysql
 
     sudo apt-get install mysql-server
+    sudo mysql_secure_installation utility   # if popup doesnt ask for root password
     sudo apt-get install mysql-client
     sudo apt-get install mysql-workbench
     sudo apt-get install python-mysqldb
