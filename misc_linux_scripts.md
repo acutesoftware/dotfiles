@@ -37,12 +37,31 @@ How long has the PC been running
      >  23:09:26 up 61 days,  8:28,  1 user,  load average: 0.82, 0.48, 0.34
 
 
+Get readings of Hardware Sensors / Temperature
+    sensors
+    >   coretemp-isa-0000
+        Adapter: ISA adapter
+        Package id 0:  +40.0°C  (high = +100.0°C, crit = +100.0°C)
+        Core 0:        +37.0°C  (high = +100.0°C, crit = +100.0°C)
+        Core 1:        +40.0°C  (high = +100.0°C, crit = +100.0°C)
+        Core 2:        +34.0°C  (high = +100.0°C, crit = +100.0°C)
+        Core 3:        +37.0°C  (high = +100.0°C, crit = +100.0°C)
+        
+        nvme-pci-0100
+        Adapter: PCI adapter
+        Composite:    +32.9°C  (low  =  -0.1°C, high = +84.8°C)
+                               (crit = +94.8°C)
+        Sensor 1:     +32.9°C  (low  = -273.1°C, high = +65261.8°C)
+        Sensor 2:     +35.9°C  (low  = -273.1°C, high = +65261.8°C)
+        Sensor 8:     +32.9°C  (low  = -273.1°C, high = +65261.8°C)
+
+
+### Files and Folders
+
 Count files in folder and sub folders
 
     find . -type f | wc -l
 
-
-### Files and Folders
 
 Get a tree view of subfolders 
 
